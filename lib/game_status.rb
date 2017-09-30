@@ -28,5 +28,5 @@ def full?(board)
 end
 
 def draw?(board)
-  !tie?(board) == full?(board)
+  !tie?(board) && full?(board)
 end
