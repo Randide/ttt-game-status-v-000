@@ -26,3 +26,7 @@ end
 def full?(board)
   board.all?{|playmark| playmark == "X" || playmark == "O"}
 end
+
+def draw?(board)
+  !tie?(board) == full?(board)
+end
