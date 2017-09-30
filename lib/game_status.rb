@@ -24,5 +24,5 @@ def won?(board)
 end
 
 def full?(board)
-  board.all?(|mark| mark == "O" || mark == "X")
+  board.all?(|playmark| playmark == "X" || playmark == "O")
 end
